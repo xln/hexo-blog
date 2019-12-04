@@ -346,86 +346,21 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/blog/2019/09/05/bash_profile/" >
+        <a class="abstract-title" href = "/blog/2019/12/04/live2d/" >
             
-                <span>mac ~/.bash_profile配置重启后不生效的解决方法</span>
+                <span>为你的博客添加live2d模型</span>
         </a>
         <div class="abstract-content">
-            zsh加载的是 ~/.zshrc文件，而 ‘.zshrc’ 文件中并没有定义任务环境变量。
-解决办法
-在~/.zshrc文件最后，增加一行： 
-1$ source ~/.bash_profile
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/05</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "linux">linux</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "macOS">macOS</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/blog/2019/09/05/permissiondenied/" >
-            
-                <span>macOS下 npm install 报错 &#34;permission denied&#34;</span>
-        </a>
-        <div class="abstract-content">
-            12345678910npm ERR! Error: EACCES: permission denied, mkdir '/Users/xxxxx/.npm/_cacache/index-v5/ad/a1'npm ERR!  &#123; [Error: EACCES: permission denied, mkdir '/Users/xxxxx/.npm/_cacache/index-v5/ad/a1']npm ERR!   cause:npm ERR!    &#123; Error: EACCES: permission denied, mkdir '/Users/x x x xx...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/05</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "macOS">macOS</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "nodejs">nodejs</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "npm">npm</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/blog/2019/09/05/hexocheckoutthemes/" >
-            
-                <span>Hexo 切换主题后css文件不生效问题</span>
-        </a>
-        <div class="abstract-content">
-            1$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d
+            首先安装hexo-helper-live2d包： 
+1$ npm install --save hexo-helper-live2d
 
-
+然后在根目录修改_config.yml 配置
+12345678910111213141516live2d:  enable: true  scriptFrom: local  pluginRootPath: live2dw/  pluginJsPath: lib/  pluginModelPath: assets/  tagMode: false  debug: false  model:    use: live2d-widget-model-hiji...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/05</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/12/04</span>
             </div>
             <!-- tags  -->
             
@@ -433,7 +368,7 @@
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "hexo">hexo</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "themes">themes</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "live2d">live2d</a>
     
 </div>
             

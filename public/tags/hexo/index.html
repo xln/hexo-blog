@@ -346,6 +346,41 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/blog/2019/12/04/live2d/" >
+            
+                <span>为你的博客添加live2d模型</span>
+        </a>
+        <div class="abstract-content">
+            首先安装hexo-helper-live2d包： 
+1$ npm install --save hexo-helper-live2d
+
+然后在根目录修改_config.yml 配置
+12345678910111213141516live2d:  enable: true  scriptFrom: local  pluginRootPath: live2dw/  pluginJsPath: lib/  pluginModelPath: assets/  tagMode: false  debug: false  model:    use: live2d-widget-model-hiji...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/12/04</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "hexo">hexo</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "live2d">live2d</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/blog/2019/09/05/hexocheckoutthemes/" >
             
                 <span>Hexo 切换主题后css文件不生效问题</span>
@@ -506,9 +541,20 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 4
+        Total : 5
         </div>
         <!-- search  -->
         
@@ -521,6 +567,11 @@
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/04</span><a class="archive-post-title" href= "/blog/2019/12/04/live2d/" >为你的博客添加live2d模型</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -554,6 +605,8 @@
         <span class="sidebar-tag-name" data-tags="hexo"><span class="iconfont-archer">&#xe606;</span>hexo</span>
     
         <span class="sidebar-tag-name" data-tags="themes"><span class="iconfont-archer">&#xe606;</span>themes</span>
+    
+        <span class="sidebar-tag-name" data-tags="live2d"><span class="iconfont-archer">&#xe606;</span>live2d</span>
     
         <span class="sidebar-tag-name" data-tags="nodejs"><span class="iconfont-archer">&#xe606;</span>nodejs</span>
     
@@ -627,7 +680,7 @@ jsonContent:
     </div>
     <!-- async load share.js -->
      
-    </body>
+    <script src="/blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/blog/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":250,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
 
 
